@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-msfd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-27-tenant/test-rhtap-27-app/devfile-sample-code-with-quarkus-msfd@sha256:a47597a89350e5be64f34084b019bf1cdcd086d2d0712bd25d7a0b3f6a212a3b
+        name: my-java-quarkus
+        resources: {}
+status: {}
